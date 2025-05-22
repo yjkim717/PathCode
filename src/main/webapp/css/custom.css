@@ -1,0 +1,42 @@
+/* Custom CSS to fix table header visibility issues */
+
+/* Make sure table headers are visible */
+.table thead th {
+    color: white !important;
+    background-color: #4e73df !important;
+    border-color: #4e73df !important;
+    font-weight: bold !important;
+    visibility: visible !important;
+    display: table-cell !important;
+}
+
+/* Ensure the thead-primary class works correctly */
+.thead-primary {
+    background: linear-gradient(to right, #4e73df, #2e59d9) !important;
+    color: white !important;
+    visibility: visible !important;
+    display: table-header-group !important;
+}
+
+/* Ensure table header row is visible */
+.table thead tr {
+    visibility: visible !important;
+    display: table-row !important;
+}
+
+/* Add more contrast to table headers */
+.table-bordered thead th {
+    border: 1px solid #2e59d9 !important;
+}
+
+/* Fix for potential z-index issues */
+.table-responsive {
+    overflow-x: visible !important;
+    z-index: auto !important;
+}
+
+/* Ensure font icons are visible in the header */
+.table thead th i {
+    margin-right: 5px;
+    visibility: visible !important;
+} 

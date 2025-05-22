@@ -1,0 +1,1 @@
+-- Insert sample users first\nINSERT INTO User (ID, Username, Email, password)\nVALUES\n(1, 'user1', 'user1@example.com', 'password123'),\n(2, 'user2', 'user2@example.com', 'password456');

@@ -1,0 +1,244 @@
+/* Main CSS for Restaurant Review Application */
+
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: #35424a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #e8491d;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background: #35424a;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #e8491d;
+}
+
+/* Section Styles */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Alert Styles */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    background-color: #337ab7;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #286090;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+}
+
+/* Additional Status Buttons (Solved/In Progress) */
+.btn-status {
+    background-color: #d1d1d1;
+    border-color: #d1d1d1;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.btn-status:hover.btn-solved {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+}
+
+.btn-status:hover.btn-progress {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: white;
+}
+
+.btn-status.active.btn-solved {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-status.active.btn-progress {
+    background-color: #ffc107;
+    color: white;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    outline: none;
+    border-color: #337ab7;
+}
+
+/* Feature Box Styles */
+.feature-box {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.feature-box h2 {
+    color: #35424a;
+    margin-top: 0;
+}
+
+.feature-box p {
+    margin-bottom: 15px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background: #35424a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 5px;
+    }
+}
